@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" media="screen">
+
+    <!--Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <!--Google Fontes-->
+
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+    <!--Bootstrap-->
+
+    <!--Google Fontes Giz-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Google Fontes Giz-->
+
+    <!--Scripts de Js-->
+    <script src="JS/mune.js" defer></script>
+    <script src="js/btn-menu-mob.js" defer></script>
+
+    <title>HumanEdu</title>
+  </head>
+  <body>
+    <header id="header">
+
+      <div class="interface">
+        <section class="logo">
+          <img src="IMG/IMG-3.jpg" alt="Logo livro" />
+        </section>
+
+        <section class="menu-desktop">
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="aulas.html" target="_self">Aulas</a></li>
+              <li><a href="#">Atividades</a></li>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="btn-contato">
+          <a href="#">
+            <button>Contato</button>
+          </a>
+        </section>
+
+        <div class="btn-menu-mob" id="btn-menu-mob">
+          <div class="line-menumob-1"></div>
+          <div class="line-menumob-2"></div>
+        </div>
+
+         <section class="menu-mobile" id="menu-mobile">
+          <nav>
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="aulas.html" target="_self">Aulas</a></li>
+              <li><a href="#">Atividades</a></li>
+              <li><a href="#">Quem Somos</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </section>
+          
+      </div>
+    </header>
+
+    <section class="humanedu-site">
+      <div class="interface">
+        <div class="txt-humanedu">
+          <h1>Aulas Online <span> Presencias Gratuitas! </span></h1>
+          <p>
+            Conteúdo 100% Digital com vídeos, apostilas e atividades
+            interativas! <span>Presencias com voluntários!</span>
+          </p>
+          <a href="#">
+            <button>Saiba Mais</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Acessibilidade-->
+    <section>
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+      </script>
+    </section>
+    <!--Acessibilidade-->
+
+    <section class="sobre">
+      <div class="interface">
+        <article class="itens">
+          <div class="txt-itens">
+            <h3>
+              <span>Ensino</span><br />
+              Fundamental 1
+            </h3>
+            <p>
+              O foco está na alfabetização, no letramento e na construção das
+              bases em matemática, ciências, história, geografia e outras áreas
+              do conhecimento.
+            </p>
+          </div>
+
+          <div class="img-itens">
+            <img src="IMG/IMG-04.jpg" alt="" />
+          </div>
+        </article>
+
+        <article class="itens">
+          <div class="img-itens item-1">
+            <img src="IMG/IMG-05.jpg" alt="" />
+          </div>
+
+          <div class="txt-itens item-2">
+            <h3>
+              <span>Ensino</span><br />
+              Fundamental 2
+            </h3>
+            <p>
+              Aprofundam o que aprenderam nos primeiros anos escolares e começam
+              a ter contato com novos conteúdos e disciplinas, como física,
+              química, filosofia e outras.
+            </p>
+          </div>
+        </article>
+
+        <article class="itens">
+          <div class="txt-itens">
+            <h3>
+              <span>Ensino</span><br />
+              Médio
+            </h3>
+            <p>
+              Os estudantes aprofundam seus conhecimentos nas áreas de
+              linguagens, matemática, ciências da natureza e ciências humanas,
+              além de se prepararem para os desafios como Enem e vestibulares.
+            </p>
+          </div>
+
+          <div class="img-itens">
+            <img src="IMG/IMG-6.jpg" alt="" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contato">
+      <div class="interface">
+        <article class="txt-contato">
+          <h3>
+            Aulas com voluntários <span>Encontre os polos presencias</span>
+          </h3>
+          <p>matrículas abertas!</p>
+        </article>
+
+        <article class="icons-contato">
+          <a href="#">
+            <button>
+              <i class="bi bi-ui-checks"></i>
+              <p>Matrículas</p>
+            </button>
+          </a>
+          <a href="#">
+            <button>
+              <i class="bi bi-whatsapp"></i>
+              <p>Seja Voluntário</p>
+            </button>
+          </a>
+
+          <a href="#">
+            <button>
+              <i class="bi bi-envelope-at-fill"></i>
+              <p>Email pra Contato</p>
+            </button>
+          </a>
+
+          <a href="local.html" target="_self">
+            <button>
+              <i class="bi bi-geo-alt"></i>
+              <p>Unidades de Apoio Presencial</p>
+            </button>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="aulas">
+      <div class="interface">
+         <p>Aulas e Conteúdos</p>
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; padding-bottom: 230px;">
+        <img src="IMG/aulas.png" alt="Imagem centralizada">
+      </div>
+
+      <div class="overlay"></div>
+    </section>
+      
+    <section class="quem-somos">
+      <div class="interface">
+
+        <div class="txt-quem-somos">
+          <h3>Quem <span>Somos?</span></h3>
+        </div>
+
+        <div class="instrucoes">
+
+          <article class="instru-box">
+
+            <div class="img-instru-box">
+              <img src="IMG/IMG-2.jpg" alt="">
+            </div>
+
+            <div class="txt-instru-box">
+              <h4>HumanEdu</h4>
+              <p>A HumanEdu é um projeto voluntário que nasceu do desejo de transformar vidas por meio da educação. Reunimos pessoas dispostas a ensinar e aprender, oferecendo apoio gratuito na alfabetização de idosos e no auxílio a pessoas com dificuldades de aprendizagem.</p> 
+              <p>Nosso foco é tornar o conhecimento acessível e de qualidade para todos, com conteúdos voltados ao ensino fundamental e médio. Acreditamos que a educação é um direito e uma ferramenta poderosa para promover inclusão, autonomia e dignidade.</p> 
+              <p>Aqui, cada aula, cada material e cada gesto de solidariedade refletem nosso compromisso com um futuro mais justo e humano.</p> 
+              <p>Seja bem-vindo à HumanEdu — onde ensinar é um ato de amor, e aprender é um caminho para a liberdade.</p>
+                  
+            </div>
+
+            </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="interface">
+        <section class="top-footer">
+
+          <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+          <a href="#"><button><i class="bi bi-facebook"></i></button></a>
+          <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+
+        </section>
+
+        <section class="middle-footer">
+        <a href="#">Suporte</a>  
+        </section>
+
+        <section class="bottom-footer">
+          <p>HumanEdu 2025 &copy; Todos direitos reservados</p>
+        </section>
+
+      </div>
+
+    </footer>
+
+
+  </body>
+</html>

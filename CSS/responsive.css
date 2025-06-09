@@ -1,0 +1,109 @@
+@media screen and (max-width: 1281.6px) {
+  header .menu-desktop,
+  header .btn-contato {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /* Estilo do Edu */
+  .humanedu-site .txt-humanedu h1 {
+    font-size: 2.6em;
+    line-height: 40px;
+  }
+
+  .humanedu-site .txt-humanedu p {
+    font-size: 14px;
+  }
+
+  .humanedu-site .txt-humanedu p span {
+    display: inline;
+  }
+
+  header .btn-menu-mob {
+    display: block;
+  }
+
+  .humanedu-site button {
+    font-size: 18px;
+  }
+
+  /* respo. stilo sobre */
+
+  .sobre .itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 60px;
+
+    flex-direction: column;
+  }
+
+  .sobre .itens .img-itens img {
+    width: 100%;
+  }
+
+  .sobre .itens .txt-itens p {
+    margin-bottom: 20px;
+  }
+
+  .aulas .interface img {
+    width: 100%;
+  }
+
+  .sobre .itens .item-1 {
+    order: 1;
+  }
+  .sobre .itens .item-2 {
+    order: 0;
+  }
+
+  /* estilo dos botões de contato */
+  .txt-contato,
+  .icons-contato {
+    display: block;
+    width: 100%;
+  }
+
+  .contato .txt-contato h3 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+
+  .contato .txt-contato p {
+    margin-bottom: 20px;
+  }
+
+  .contato .icons-contato button {
+    width: 100%;
+  }
+
+  /*Estilo da sessão quem somos*/
+
+  .txt-quem-somos,
+  .instrucoes {
+    display: block;
+    width: 100%;
+  }
+
+  .quem-somos .txt-quem-somos {
+    position: static;
+  }
+
+  .quem-somos .txt-quem-somos h3 {
+    font-size: 3em;
+    line-height: 50px;
+  }
+
+  .instrucoes .instru-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /*lousa*/
+  .aulas .interface p {
+    font-size: 40px;
+    padding-top: 90px;
+  }
+}

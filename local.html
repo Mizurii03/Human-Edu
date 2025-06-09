@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidades Presenciais</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .search-box {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #search-input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      #search-button {
+        padding: 10px 15px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      #search-button:hover {
+        background-color: #45a049;
+      }
+      .location-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .location-item {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+      }
+      .location-item:last-child {
+        border-bottom: none;
+      }
+      .location-name {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .location-address {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .no-results {
+        text-align: center;
+        color: #666;
+        padding: 20px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Unidades Presenciais</h1>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Buscar por nome ou endereço..."
+        />
+        <button id="search-button">Buscar</button>
+      </div>
+
+      <ul class="location-list" id="location-list">
+        <!-- As localizações serão adicionadas aqui pelo JavaScript -->
+      </ul>
+    </div>
+
+    <script>
+      // Localizações fornecidas
+      const locations = [
+        {
+          name: "Centro Comunitário do João Paulo II",
+          address: "Jardim Joao Paulo II, Sumaré - SP, 13172-653",
+        },
+        {
+          name: "Campo Vila Azenha",
+          address:
+            "R. Dante Gazzetta, 832-950 - Jardim Fadel, Nova Odessa - SP, 13460-000",
+        },
+        {
+          name: "Biblioteca de Americana",
+          address:
+            "Praça Comendador Muller, 172 - Centro, Americana - SP, 13465-289",
+        },
+        {
+          name: "Centro Cultural Edgard Tricânico D'Elboux",
+          address:
+            "R. Padre Arthur Sampaio, 76 - Conj. Hab. Roberto Romano, Santa Bárbara d'Oeste - SP, 13458-184",
+        },
+      ];
+
+      // Exibe todas as localizações na lista
+      function displayLocations(locs) {
+        const listElement = document.getElementById("location-list");
+
+        if (locs.length === 0) {
+          listElement.innerHTML =
+            '<li class="no-results">Nenhum resultado encontrado</li>';
+          return;
+        }
+
+        listElement.innerHTML = "";
+
+        locs.forEach((location) => {
+          const li = document.createElement("li");
+          li.className = "location-item";
+
+          li.innerHTML = `
+                    <div class="location-name">${location.name}</div>
+                    <div class="location-address">${location.address}</div>
+                `;
+
+          listElement.appendChild(li);
+        });
+      }
+
+      // Função de busca
+      document.getElementById("search-button").addEventListener("click", () => {
+        const searchTerm = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+
+        if (searchTerm.trim() === "") {
+          displayLocations(locations);
+          return;
+        }
+
+        const filtered = locations.filter(
+          (loc) =>
+            loc.name.toLowerCase().includes(searchTerm) ||
+            loc.address.toLowerCase().includes(searchTerm)
+        );
+
+        displayLocations(filtered);
+      });
+
+      // Exibe todas as localizações ao carregar a página
+      displayLocations(locations);
+    </script>
+  </body>
+</html>
