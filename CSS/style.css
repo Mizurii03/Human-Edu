@@ -333,6 +333,7 @@ section.aulas {
   background-attachment: fixed;
   position: relative;
   color: #ffffff;
+  border-radius: 25px;
 }
 
 .aulas .interface p {
